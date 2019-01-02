@@ -14,7 +14,7 @@
 
         <div class="mdui-textfield">
             <h4>网站标题</h4>
-            <input class="mdui-textfield-input" type="text" name="title_name" value="<?php echo $config['title_name'] ?: 'index of ';?>"/>
+            <input class="mdui-textfield-input" type="text" name="title_name" value="<?php echo $config['title_name'] ? $config['title_name'] : 'index of ';?>"/>
         </div>
 
 		<div class="mdui-textfield">
