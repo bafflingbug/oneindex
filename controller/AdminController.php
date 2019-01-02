@@ -2,7 +2,8 @@
 define('VIEW_PATH', ROOT.'view/admin/');
 class AdminController{
 	static $default_config = array(
-	  'site_name' =>'OneIndex',
+	  'site_name' => 'OneIndex',
+	  'title_name' => 'index of ',
 	  'password' => 'oneindex',
 	  'style'=>'material',
 	  'onedrive_root' =>'',
@@ -53,6 +54,7 @@ class AdminController{
 			}
 
 			config('site_name', $_POST['site_name']);
+			config('title_name',$_POST['title_name']);
 			config('style', $_POST['style']);
 			config('onedrive_root', get_absolute_path($_POST['onedrive_root']));
 			config('onedrive_hide', $_POST['onedrive_hide']);
